@@ -3,20 +3,20 @@ import java.util.Scanner;
 public class Main {
     public static void main (String[] args){
         Main main = new Main();
-        Scanner scnr = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        int B = scnr.nextInt();
-        int Br = scnr.nextInt();
-        int Bs = scnr.nextInt();
-        int A = scnr.nextInt();
-        int As = scnr.nextInt();
+        int B = sc.nextInt();
+        int Br = sc.nextInt();
+        int Bs = sc.nextInt();
+        int A = sc.nextInt();
+        int As = sc.nextInt();
 
         int years = Br - B; //years that B saved for
 
         int bTotalSavings = years * Bs; //savings for B
         int aSavings = As;
         System.out.print(main.age(bTotalSavings, As, aSavings, A));
-        scnr.close();
+        sc.close();
     }
 
     int age(int bTotalSavings, int As, int aSavings, int A){
